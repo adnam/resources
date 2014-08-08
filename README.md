@@ -1,4 +1,4 @@
 resources
 =========
 
-Resources: ReST for Humans
+Nothing here yet, check back later
