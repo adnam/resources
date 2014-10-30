@@ -17,8 +17,8 @@ Alternatively with a configuration, parameters same as requests.request()
 Create a shortcut to a specific resource within the API
 
     users = my_api.users
-
-Post data to that resource returns a (status_code, result) tuple
+    
+The variable "users" now points to 'http://example.com/api/users'. Now POSTing data to that resource returns a (status_code, result) tuple:
 
     status, new_user = users.post(data={"name": "Steve", "email"="steve@example.com"})
     
@@ -33,5 +33,4 @@ Fetch a specific resource
 And delete it
 
     rabbit = my_api.rabbits[6385].delete()
-
 
