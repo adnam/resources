@@ -36,20 +36,4 @@ class NclientTestCase(unittest.TestCase):
         status, result = fake_api.get()
         self.assertEqual(200, status)
         self.assertEqual("Hello", result)
-    
-    def test_options(self):
-        pass
-
-    def _test_api(self):
-
-        options = dict(
-            auth = ('admin', 'adminPwd'),
-        )
-        api = JsonResource("http://localhost:5002/api/v1_5", options={})
-        
-        #result = nclient.get(api.users[1234]['request'])
-        cir = api.checkInRequest["209b4d5e977f426a8d5c21944c85712d"]
-        cir.set(options)
-        result = cir.get()
-        print result
 
