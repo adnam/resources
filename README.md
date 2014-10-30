@@ -12,7 +12,7 @@ Create an API resource object
 Alternatively with a configuration, parameters same as requests.request()
 
     my_api = JsonResource('http://example.com/api', \
-            options={"auth": ('admin', 'adminPwd')})
+            options={"auth": ('username', 'password')})
 
 Create a shortcut to a specific resource within the API
 
