@@ -12,7 +12,7 @@ class Response(object):
     def __init__(self, status=200, text=""):
         self.status_code, self.text = status, text
 
-class NclientTestCase(unittest.TestCase):
+class ResourceTestCase(unittest.TestCase):
     
     def setUp(self):
         self.client = Mock()
