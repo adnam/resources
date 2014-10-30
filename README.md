@@ -28,9 +28,9 @@ The json response is automatically decoded
     
 Fetch a specific resource
 
-    rabbit = my_api.rabbits[6385].get()
+    status, rabbit = my_api.rabbits[6385].get()
 
 And delete it
 
-    rabbit = my_api.rabbits[6385].delete()
+    status, _ = my_api.rabbits[6385].delete()
 
