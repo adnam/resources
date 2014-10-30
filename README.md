@@ -1,15 +1,12 @@
-resources
-=========
+# resources
 
 Interact with HTTP resources
 
-
-Examples:
-    
-    from resources import JsonResource
+### Examples:
     
 Create an API resource object
 
+    from resources import JsonResource
     my_api = JsonResource('http://example.com/api')
     
 Alternatively with a configuration, parameters same as requests.request()
